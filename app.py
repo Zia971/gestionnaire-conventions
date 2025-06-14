@@ -21,7 +21,7 @@ st.set_page_config(
 )
 
 # CSS personnalisé pour les couleurs professionnelles
-st.markdown("""
+st.markdown("""<style>
 
     .status-ok { color: #10B981; font-weight: bold; }
     .status-warning { color: #F59E0B; font-weight: bold; }
@@ -55,6 +55,7 @@ st.markdown("""
         border-color: #10B981; 
         color: #065F46; 
     }
+</style>
 
 """, unsafe_allow_html=True)
 
