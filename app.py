@@ -402,7 +402,7 @@ elif page == "🚨 Alertes & Rappels":
                 st.markdown(f"💰 {format_montant(conv['Montant_Euro'])}")
                 st.caption(f"Échéance: {conv['Date_Fin'].strftime('%d/%m/%Y')}")
             with col3:
-                if st.button(f"📋 Voir détails", key=f"watch_{conv['Numero_Operation']}"):
+                if st.button(f"📋 Voir détails", key=f"watch_details_{conv['Numero_Operation']}"):
                     st.info("Détails de la convention...")
             st.markdown("---")
     
